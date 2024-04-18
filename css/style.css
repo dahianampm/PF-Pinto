@@ -666,4 +666,6 @@ footer p{
     text-align: center;
 }
 
-
+::selection{
+    background-color: #f2c6c2;
+}
