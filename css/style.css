@@ -1,0 +1,669 @@
+
+/*tipografías externas*/
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam:wght@300;400;700&display=swap");
+
+/*                              NAVBAR                 */
+
+.navbar-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar {
+    padding: 0;
+    color: #003823;
+    font-family: "Asap Condensed Medium";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 5px 40px;
+}
+
+.bg-color-navbar {
+    background: rgba(134, 166, 157, 0.20);
+}    
+
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler-icon {
+    color: rgb(0, 56, 35);
+}
+
+/*                                     TEXTOS                                             */
+
+/* títulos*/
+h1,
+h2{
+  color: #003823;
+  font-family: Kalam;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* subtitulos */
+
+h3,
+h4{
+  color: #003823;
+  font-family: "Asap Condensed Medium";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* parrrafos */
+
+p{
+  color: #003823;
+  font-family: "Asap Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*                                      BOTONES                                    */
+.boton{
+    color: #003823;
+    font-family: "Asap Condensed Medium";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+  }
+  
+.boton{
+    height: 40px;   
+    border-radius: 20px;
+    border: 1px solid #003823;
+    background: #FEFDE7; 
+    padding: 5px 30px;
+  }
+
+.boton:hover{
+    background: #003823;
+    color: #FEFDE7;
+    transition: 0.5s;
+  }
+
+/*                                   INDEX MAIN                 */
+
+/* bienvenida */
+
+.bienvenida{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin: 16px;
+}
+
+.logotipo-bienvenida{
+  width: 60%;
+  height: 280px;
+  align-items: flex-start;
+  object-fit: cover;
+}
+
+.contenedor-bienvenida{
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contenedor-bienvenida p{
+    font-family: "Asap Condensed Medium";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+
+.img-bienvenida{
+  width: 60%;
+  height: 475px;
+  object-fit: cover;
+  position:absolute;
+  right: 0;
+}
+
+
+
+/* testimonios */
+.testimonio{
+    width: 100%;
+    background: rgba(134, 166, 157, 0.20);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonio h2{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.testimonio article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-testimonio{
+    width: 300px;
+    text-align: center;
+    padding: 0px 20px 20px;
+}
+
+/*                                    SOBRE MI                 */
+
+.sobremi{
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 16px;
+    gap: 10px;
+}
+
+.img-sobremi{
+    height: 550px;
+    width: 30%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+.img-sobremi img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  .intro-sobremi{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .miformacion{
+    background: rgba(134, 166, 157, 0.20);
+    height: 100%;
+    padding: 20px 16px;
+  }
+  
+  .areas-tratamiento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+
+  .areas-tratamiento h2{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .areas-tratamiento article{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .areas-tratamiento ul {
+    font-family: "Asap Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: circle;
+    text-align: left;
+   }
+  
+  .areas-tratamiento ul li {
+    text-decoration: none;
+    color: #003823;
+    padding: 10px;
+    display: block;
+  }
+
+  @media (max-width:768px){
+    .sobremi{
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+  
+    .intro-sobremi{
+      width: 90%;
+    }
+  
+    .intro-sobremi h1{
+      font-size: 20px;
+    }
+  
+    .intro-sobremi h2{
+      font-size: 20px;
+    }
+  
+    .img-sobremi{
+      width: 90%;
+      height: 300px;
+      }
+  }
+
+/*                                    TIENDA                 */
+
+.titulo-tienda{
+    text-align: center;
+    padding-top: 20px;
+   }
+
+.recetarios{
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: space-evenly;
+    margin: 20px 16px 30px;
+    gap: 20px;
+   }
+
+   .card-recetario{
+    width: 300px;
+    background: rgba(134, 166, 157, 0.20);
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    transition: 0.5s;
+   }
+  
+  .card-recetario:hover{
+    background-color: #f2c6c2;
+  } 
+
+   .card-recetario img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+    transition: 0.5s;
+   }
+
+  .card-recetario img:hover{
+    height: 400px;
+      }
+
+.card-recetario span {
+    color: #003823;
+    font-family: "Asap Condensed";
+    font-size: 16px;
+    background-color: rgb(214, 26, 26);
+    color: #003823;
+    padding: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 5px;
+  }
+
+.card-recetario span:hover{
+    font-size: 18px;
+  }
+
+/*                                    CONSULTA ONLINE                 */
+.seccion-consultaonline{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 16px;
+  justify-content: space-evenly;
+  gap: 20px;
+ }
+
+ .img-consultaonline{
+  width: 70%;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+ }
+
+ .contenedor-consultaonline{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+/* COMO FUNCIONA*/
+
+ .consulta-comofunciona{
+    background: rgba(134, 166, 157, 0.20);
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .consulta-comofunciona ul {
+  font-family: "Asap Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style-type: decimal;
+  text-align: left;
+  padding: 20px;
+}
+
+.consulta-comofunciona ul li {
+  text-decoration: none;
+  color: #003823;
+  padding: 10px;  
+}
+
+.boton-consultaonline{
+  align-self: center;
+}
+
+.titulo-ventajas{
+  text-align: center;
+  padding: 30px 0;
+}
+
+/*      VENTAJAS-GRID    */
+
+.seccion-ventajas{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    'caja1 caja3 caja2 caja5 caja4';
+  margin: 20px 16px;
+  padding: 10px;
+  gap: 10px;
+}
+
+
+.box-ventaja {
+  flex-direction: column;
+  padding: 10px; 
+  min-height: 300px;
+  max-height: 100%;
+  text-align: center;
+}
+
+.box-ventaja img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.c1{
+  grid-area: caja1;
+}
+
+.c2{
+  grid-area: caja2;
+}
+
+.c3{
+  grid-area: caja3;
+}
+
+.c4{
+  grid-area: caja4;
+}
+
+.c5{
+  grid-area: caja5;
+}
+
+
+.tarifa{
+  display: flex;
+  justify-content: center;
+  margin: 0 16px 30px;
+}
+
+.contenedor-tarifa{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1px solid #003823;
+  background: rgba(134, 166, 157, 0.20);
+}
+
+.contenedor-tarifa h2{
+  width: 100%;
+  background-color: #FEFDE7;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #003823;
+  padding: 5px 0;
+}
+
+.contenedor-tarifa h3{
+  font-size: 50px;
+  text-align: center;
+}
+
+.contenedor-tarifa button{
+  width: 100%;
+}
+
+
+
+/*                                    CONTACTO                 */
+
+
+/* PREGUNTAS FRECUENTES */
+.titulo-preguntas{
+  text-align: center;
+  padding: 20px 0 0;  
+}
+
+.accordion {
+  --bs-accordion-color: #003823;
+  --bs-accordion-active-bg: rgba(134, 166, 157, 0.20);
+  --bs-accordion-active-color: #003823;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-padding-x: 20px;
+  --bs-accordion-btn-padding-y: 10px;
+  --bs-accordion-body-padding-x: 20px;
+}
+
+.accordion h2{
+  color: #003823;
+  font-family: "Asap Condensed Medium";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.accordion-body{
+  color: #003823;
+  font-family: "Asap Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contacto{
+  text-align: center;
+  background: rgba(134, 166, 157, 0.20);
+  padding: 20px 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.formulario-contacto{
+  width: 60%;  
+}
+
+.seccion-formulario{
+  display: block;
+  flex-wrap: wrap;
+  margin-left: 0;
+  padding: 0 0 20px;
+
+}
+
+.seccion-formulario label{
+  width: 50px;
+  height: 40px;
+  color: #003823;
+  font-family: "Asap Condensed Medium";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 20px 0;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.seccion-formulario input{
+  width: 90%;
+  height: 40px;
+  border: 1px solid #003823;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-family: "Asap Condensed";
+  font-size: 12px;
+}
+
+#message{
+  width: 100%;
+  height: 240px;
+  border: 1px solid #003823;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Asap Condensed";
+  font-size: 12px;
+}
+
+.formulario-botones{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0;
+  gap: 10px;
+}
+
+/*                                     FOOTER                 */
+
+footer{
+    width: 100%;
+    background: #003823;
+    color: #FEFDE7;
+    padding: 20px 40px 10px;
+}
+
+footer h3{
+    color: #FEFDE7;
+}
+
+.secciones-footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.menu-footer{
+    width: 300px;
+    justify-items: center;
+    
+}
+
+.nav-footer ul {
+    font-family: "Asap Condensed";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 30px;
+}
+    
+.nav-footer ul li a {
+      text-decoration: none;
+      color: #FEFDE7;
+      padding: 5px;
+      display: block;
+}
+
+.info-footer{
+    width: 300px;
+}
+.info-footer p{
+      text-align: center;
+      font-size: 20px;
+}
+  
+.redes-footer{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-footer{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.icono-redes{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icono-redes img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}   
+  
+footer p{
+    color: #FEFDE7;
+    text-align: center;
+}
+
+
