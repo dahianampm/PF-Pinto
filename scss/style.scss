@@ -1,0 +1,20 @@
+//base
+@import "base/reset";
+@import "base/utilities";
+@import "base/vars";
+
+//components
+@import "components/boton";
+@import "components/footer";
+@import "components/navbar";
+@import "components/text";
+
+//layouts 
+@import "layouts/index";
+@import "layouts/sobremi";
+@import "layouts/tienda";
+@import "layouts/consultaonline";
+@import "layouts/contacto";
+@import "layouts/mediaqueries";
+
+

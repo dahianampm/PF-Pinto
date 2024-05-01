@@ -1,0 +1,68 @@
+/* index */
+@media (max-width: 480px) {
+  .img-bienvenida {
+    display: none;
+  }
+
+  .logotipo-bienvenida {
+    width: 265px;
+  }
+
+  .contenedor-bienvenida {
+    width: 265px;
+    align-items: center;
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* sobre mi */
+@media (max-width: 768px) {
+  .sobremi {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .intro-sobremi {
+    width: 90%;
+
+    h1,
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .img-sobremi {
+    width: 90%;
+    height: 300px;
+  }
+}
+
+/* contacto */
+@media (max-width: 768px) {
+  .formulario-contacto {
+    width: 100%;
+  }
+}
+
+/* footer */
+@media (max-width: 320px) {
+  .info-footer p {
+    text-align: left;
+  }
+
+  .redes-footer {
+    align-items: flex-start;
+  }
+
+  .icono-redes {
+    justify-content: flex-start;
+  }
+
+  footer p {
+    text-align: left;
+  }
+}

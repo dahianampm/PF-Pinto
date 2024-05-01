@@ -1,0 +1,31 @@
+.navbar-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar {
+  padding: 0;
+  color: #003823;
+  font-family: "Asap Condensed Medium";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 5px 7%;
+}
+
+.bg-color-navbar {
+  background: rgba(134, 166, 157, 0.2);
+}
+
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler-icon {
+  color: rgb(0, 56, 35);
+}

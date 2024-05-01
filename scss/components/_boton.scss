@@ -1,0 +1,20 @@
+.boton {
+  color: #003823;
+  font-family: "Asap Condensed Medium";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #003823;
+  background: #fefde7;
+  padding: 5px 30px;
+
+  &:hover {
+    background: #003823;
+    color: #fefde7;
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,73 @@
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin: 20px 7%;
+}
+
+.logotipo-bienvenida {
+  width: 50%;
+  justify-items: center;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.contenedor-bienvenida {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  p {
+    font-family: "Asap Condensed Medium";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.img-bienvenida {
+  width: 70%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+}
+
+/* testimonios */
+
+.testimonio {
+  width: 100%;
+  background: rgba(134, 166, 157, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px 7%;
+  margin-bottom: 20px;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card-testimonio {
+  width: 300px;
+  text-align: center;
+  padding: 0px 20px 20px;
+}
