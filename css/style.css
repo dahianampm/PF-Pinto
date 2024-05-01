@@ -186,10 +186,12 @@ p {
 
 .logotipo-bienvenida {
   width: 50%;
+  height: 100%;
   justify-items: center;
 }
 .logotipo-bienvenida img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -212,6 +214,7 @@ p {
 
 .img-bienvenida {
   width: 70%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   right: 0;
@@ -365,6 +368,7 @@ p {
 
 .seccion-consultaonline {
   height: 350px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
