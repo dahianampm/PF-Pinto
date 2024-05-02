@@ -1,27 +1,20 @@
 .seccion-consultaonline {
   height: 350px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex (column, center, center);
   margin: 20px 0;
   position: relative;
 }
 
 .img-consultaonline {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  @include img(100%, 100%, cover);
   position: absolute;
   margin: 20px 7%;
 }
 
 .contenedor-consultaonline {
-  background-color: rgb(255, 255, 255, 0.9);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #ffffffe6;
+  @include flex (column, none, center);
   padding: 10px;
   border-radius: 20px;
   z-index: 1;
@@ -30,24 +23,20 @@
 /* COMO FUNCIONA*/
 
 .consulta-comofunciona {
-  background: rgba(134, 166, 157, 0.2);
+  background: $color-bg;
   padding: 20px 7%;
   display: flex;
   flex-direction: column;
 
   ul {
-    font-family: "Asap Condensed";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include texto(16px, "Asap Condensed", normal, 400, normal);
     list-style-type: decimal;
     text-align: left;
     padding: 20px;
 
     li {
       text-decoration: none;
-      color: #003823;
+      color: $color-principal;
       padding: 10px;
     }
   }
@@ -87,21 +76,19 @@
 }
 
 .contenedor-tarifa {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flex (column, space-between, none);
   width: 300px;
   height: 200px;
   border-radius: 20px;
-  border: 1px solid #003823;
-  background: rgba(134, 166, 157, 0.2);
+  border: 1px solid $color-principal;
+  background: $color-bg;
 
   h2 {
     width: 100%;
-    background-color: #fefde7;
+    background-color: $color-secundario;
     text-align: center;
     border-radius: 20px;
-    border: 1px solid #003823;
+    border: 1px solid $color-principal;
     padding: 5px 0;
   }
 

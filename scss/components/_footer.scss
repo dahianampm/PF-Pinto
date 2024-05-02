@@ -1,11 +1,11 @@
 footer {
   width: 100%;
-  background: #003823;
-  color: #fefde7;
+  background: $color-principal;
+  color: $color-secundario;
   padding: 20px 7% 10px;
 
   h3 {
-    color: #fefde7;
+    color: $color-secundario;
   }
 }
 
@@ -23,18 +23,14 @@ footer {
 }
 
 .nav-footer ul {
-  font-family: "Asap Condensed";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  @include texto(16px, "Asap Condensed", normal, 400, normal);
   list-style-type: disc;
   text-align: left;
   padding-left: 30px;
 
   li a {
     text-decoration: none;
-    color: #fefde7;
+    color: $color-secundario;
     padding: 5px;
     display: block;
   }
@@ -51,34 +47,26 @@ footer {
 
 .redes-footer {
   width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex (column, none, center);
   gap: 10px;
 }
 
 .logo-footer {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
+  @include img(80px, 80px, cover);
+
 }
 
 .icono-redes {
-  height: 30px;
-  width: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include img(30px, 30px, cover);
+  @include flex (none, center, center);
   gap: 10px;
 
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    @include img(100%, 100%, cover);
   }
 }
 
 footer p {
-  color: #fefde7;
+  color: $color-secundario;
   text-align: center;
 }

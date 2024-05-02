@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* colores */
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam:wght@300;400;700&display=swap");
 * {
@@ -11,10 +12,11 @@
   background-color: #f2c6c2;
 }
 
+/* mixin con parametros */
 .boton {
   color: #003823;
-  font-family: "Asap Condensed Medium";
   font-size: 20px;
+  font-family: "Asap Condensed Medium";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -29,6 +31,7 @@
   background: #003823;
   color: #fefde7;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 footer {
@@ -55,8 +58,8 @@ footer h3 {
 }
 
 .nav-footer ul {
-  font-family: "Asap Condensed";
   font-size: 16px;
+  font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -83,6 +86,7 @@ footer h3 {
   width: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
   gap: 10px;
 }
@@ -94,11 +98,13 @@ footer h3 {
 }
 
 .icono-redes {
-  height: 30px;
   width: 30px;
+  height: 30px;
+  object-fit: cover;
   display: flex;
-  align-items: center;
+  flex-direction: none;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .icono-redes img {
@@ -120,8 +126,8 @@ footer p {
 .navbar {
   padding: 0;
   color: #003823;
-  font-family: "Asap Condensed Medium";
   font-size: 20px;
+  font-family: "Asap Condensed Medium";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -140,15 +146,15 @@ footer p {
 }
 
 .navbar-toggler-icon {
-  color: rgb(0, 56, 35);
+  color: #003823;
 }
 
 /* títulos*/
 h1,
 h2 {
   color: #003823;
-  font-family: Kalam;
   font-size: 24px;
+  font-family: "Kalam";
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -158,8 +164,8 @@ h2 {
 h3,
 h4 {
   color: #003823;
-  font-family: "Asap Condensed Medium";
   font-size: 20px;
+  font-family: "Asap Condensed Medium";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -168,8 +174,8 @@ h4 {
 /* parrrafos */
 p {
   color: #003823;
-  font-family: "Asap Condensed";
   font-size: 16px;
+  font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -187,11 +193,6 @@ p {
 .logotipo-bienvenida {
   width: 50%;
   height: 100%;
-  justify-items: center;
-}
-.logotipo-bienvenida img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -205,8 +206,8 @@ p {
   margin-bottom: 20px;
 }
 .contenedor-bienvenida p {
-  font-family: "Asap Condensed Medium";
   font-size: 20px;
+  font-family: "Asap Condensed Medium";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -221,32 +222,59 @@ p {
 }
 
 /* testimonios */
-.testimonio {
+.seccion-testimonio {
   width: 100%;
   background: rgba(134, 166, 157, 0.2);
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
   padding: 20px 7%;
   margin-bottom: 20px;
 }
-.testimonio h2 {
+.seccion-testimonio h2 {
   width: 100%;
   text-align: center;
   padding: 20px 0;
 }
-.testimonio article {
+
+.carrusel-testimonio {
+  height: 200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 .card-testimonio {
   width: 300px;
+  height: 180px;
+  border-top: 3px solid #003823;
+  border-bottom: 3px solid #003823;
   text-align: center;
-  padding: 0px 20px 20px;
+  padding: 20px 20px 20px;
+  position: absolute;
+  opacity: 0;
+  animation: carrusel-testimonio 15s infinite linear;
+}
+.card-testimonio:nth-child(1) {
+  animation-delay: 0s;
+}
+.card-testimonio:nth-child(2) {
+  animation-delay: 5s;
+}
+.card-testimonio:nth-child(3) {
+  animation-delay: 10s;
 }
 
+@keyframes carrusel-testimonio {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
 .sobremi {
   height: 550px;
   display: flex;
@@ -254,26 +282,20 @@ p {
   margin: 16px;
   gap: 10px;
 }
-
-.img-sobremi {
-  height: 550px;
+.sobremi img {
   width: 30%;
+  height: 550px;
+  object-fit: cover;
   border-radius: 20px;
-  object-fit: cover;
-}
-.img-sobremi img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .intro-sobremi {
   width: 50%;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .miformacion {
@@ -296,11 +318,12 @@ p {
   width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: none;
+  align-items: center;
 }
 .areas-tratamiento ul {
-  font-family: "Asap Condensed";
   font-size: 20px;
+  font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -350,13 +373,12 @@ p {
   height: 300px;
 }
 .card-recetario span {
-  color: #003823;
+  color: #fefde7;
   font-family: "Asap Condensed";
   font-size: 16px;
-  background-color: rgb(214, 26, 26);
-  color: #003823;
-  padding: 5px;
   font-weight: bold;
+  background-color: rgb(214, 26, 26);
+  padding: 5px;
   position: absolute;
   top: -10px;
   right: -10px;
@@ -378,17 +400,18 @@ p {
 }
 
 .img-consultaonline {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   margin: 20px 7%;
 }
 
 .contenedor-consultaonline {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9019607843);
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
   padding: 10px;
   border-radius: 20px;
@@ -403,8 +426,8 @@ p {
   flex-direction: column;
 }
 .consulta-comofunciona ul {
-  font-family: "Asap Condensed";
   font-size: 16px;
+  font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -453,6 +476,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: none;
   width: 300px;
   height: 200px;
   border-radius: 20px;
@@ -482,9 +506,9 @@ p {
 }
 
 .accordion {
-  --bs-accordion-color: #003823;
-  --bs-accordion-active-bg: rgba(134, 166, 157, 0.2);
-  --bs-accordion-active-color: #003823;
+  --bs-accordion-color: $color-principal;
+  --bs-accordion-active-bg: $color-bg;
+  --bs-accordion-active-color: $color-principal;
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-border-color: none;
   --bs-accordion-btn-padding-x: 7%;
@@ -493,8 +517,8 @@ p {
 }
 .accordion h2 {
   color: #003823;
-  font-family: "Asap Condensed Medium";
   font-size: 20px;
+  font-family: "Asap Condensed Medium";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -502,8 +526,8 @@ p {
 
 .accordion-body {
   color: #003823;
-  font-family: "Asap Condensed";
   font-size: 16px;
+  font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -516,6 +540,7 @@ p {
   margin: 20px 0 30px;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
 }
 
@@ -538,10 +563,11 @@ p {
   width: 70px;
   height: 40px;
   color: #003823;
-  font-family: "Asap Condensed Medium";
   font-size: 16px;
+  font-family: "Asap Condensed Medium";
   font-style: normal;
   font-weight: 500;
+  line-height: normal;
   padding: 20px 0;
   align-content: center;
   text-align: left;
@@ -595,16 +621,16 @@ p {
     align-items: center;
     height: 100%;
   }
+  .sobremi img {
+    width: 90%;
+    height: 300px;
+  }
   .intro-sobremi {
     width: 90%;
   }
   .intro-sobremi h1,
   .intro-sobremi h2 {
     font-size: 20px;
-  }
-  .img-sobremi {
-    width: 90%;
-    height: 300px;
   }
 }
 /* contacto */

@@ -1,58 +1,35 @@
 .bienvenida {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  @include flex (column, space-between, flex-start);
   position: relative;
   margin: 20px 7%;
 }
 
 .logotipo-bienvenida {
-  width: 50%;
-  height: 100%;
-  justify-items: center;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  @include img(50%, 100%, cover);
 }
 
 .contenedor-bienvenida {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  @include flex (column, space-between, flex-start);
   padding: 10px;
   margin-bottom: 20px;
 
   p {
-    font-family: "Asap Condensed Medium";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
   }
 }
 
 .img-bienvenida {
-  width: 70%;
-  height: 100%;
-  object-fit: cover;
+  @include img(70%, 100%, cover);
   position: absolute;
   right: 0;
 }
 
 /* testimonios */
 
-.testimonio {
+.seccion-testimonio {
   width: 100%;
-  background: rgba(134, 166, 157, 0.2);
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  background: $color-bg;
   padding: 20px 7%;
   margin-bottom: 20px;
 
@@ -61,16 +38,48 @@
     text-align: center;
     padding: 20px 0;
   }
+}
 
-  article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.carrusel-testimonio { 
+  height: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .card-testimonio {
   width: 300px;
+  height: 180px;
+  border-top: 3px solid $color-principal;
+  border-bottom: 3px solid $color-principal;
   text-align: center;
-  padding: 0px 20px 20px;
+  padding: 20px 20px 20px;
+  position: absolute;
+  opacity: 0;
+  animation: carrusel-testimonio 15s infinite linear;
+  &:nth-child(1) {
+    animation-delay: 0s;
+  }
+  &:nth-child(2) {
+    animation-delay: 5s;
+  }
+  &:nth-child(3) {
+    animation-delay: 10s;
+  }
+}
+
+@keyframes carrusel-testimonio{
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
 }

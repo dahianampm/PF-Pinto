@@ -5,17 +5,13 @@
 
 .navbar {
   padding: 0;
-  color: #003823;
-  font-family: "Asap Condensed Medium";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  color: $color-principal;
+  @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
   padding: 5px 7%;
 }
 
 .bg-color-navbar {
-  background: rgba(134, 166, 157, 0.2);
+  background: $color-bg;
 }
 
 .navbar-toggler {
@@ -27,5 +23,5 @@
 }
 
 .navbar-toggler-icon {
-  color: rgb(0, 56, 35);
+  color: $color-principal;
 }

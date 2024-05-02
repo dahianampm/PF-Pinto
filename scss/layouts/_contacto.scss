@@ -6,9 +6,9 @@
 }
 
 .accordion {
-  --bs-accordion-color: #003823;
-  --bs-accordion-active-bg: rgba(134, 166, 157, 0.2);
-  --bs-accordion-active-color: #003823;
+  --bs-accordion-color: $color-principal;
+  --bs-accordion-active-bg: $color-bg;
+  --bs-accordion-active-color: $color-principal;
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-border-color: none;
   --bs-accordion-btn-padding-x: 7%;
@@ -16,32 +16,22 @@
   --bs-accordion-body-padding-x: 7%;
 
   h2 {
-    color: #003823;
-    font-family: "Asap Condensed Medium";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    color: $color-principal;
+    @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
   }
 }
 
 .accordion-body {
-  color: #003823;
-  font-family: "Asap Condensed";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  color: $color-principal;
+  @include texto(16px, "Asap Condensed", normal, 400, normal);
 }
 
 .contacto {
   text-align: center;
-  background: rgba(134, 166, 157, 0.2);
+  background: $color-bg;
   padding: 20px 7%;
   margin: 20px 0 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex (column, none, center);
 }
 
 /* FORMULARIO DE CONTACTO */
@@ -63,11 +53,8 @@
   label {
     width: 70px;
     height: 40px;
-    color: #003823;
-    font-family: "Asap Condensed Medium";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
+    color: $color-principal;
+    @include texto(16px, "Asap Condensed Medium", normal, 500, normal);
     padding: 20px 0;
     align-content: center;
     text-align: left;
@@ -75,7 +62,7 @@
 
   input {
     width: 100%;
-    border: 1px solid #003823;
+    border: 1px solid $color-principal;
     border-radius: 20px;
     padding-left: 20px;
     font-family: "Asap Condensed";
@@ -86,7 +73,7 @@
 #message {
   width: 100%;
   height: 200px;
-  border: 1px solid #003823;
+  border: 1px solid $color-principal;
   border-radius: 20px;
   padding: 10px 20px;
   font-family: "Asap Condensed";
