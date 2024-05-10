@@ -1,3 +1,13 @@
+/* navbar */
+@media (max-width: 768px) {
+  .offcanvas-body {
+    form {
+      padding-left: 0;
+      padding-bottom: 20px;
+    }
+  }
+}
+
 /* index */
 @media (max-width: 480px) {
   .img-bienvenida {

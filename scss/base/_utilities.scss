@@ -22,3 +22,6 @@
   line-height: $line-height;
 }
 
+::selection {
+  background-color: $color-terciario;
+}

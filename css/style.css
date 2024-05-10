@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* colores */
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam:wght@300;400;700&display=swap");
 * {
@@ -8,11 +7,12 @@
   box-sizing: border-box;
 }
 
+/* colores */
+/* mixin con parametros */
 ::selection {
   background-color: #f2c6c2;
 }
 
-/* mixin con parametros */
 .boton {
   color: #003823;
   font-size: 20px;
@@ -38,17 +38,46 @@ footer {
   width: 100%;
   background: #003823;
   color: #fefde7;
-  padding: 20px 7% 10px;
+  padding-bottom: 10px;
 }
 footer h3 {
   color: #fefde7;
+}
+
+.subir {
+  border-top: 1px solid #003823;
+  width: 100%;
+  height: 48px;
+  background-color: #fefde7;
+  margin-bottom: 30px;
+  align-content: center;
+}
+.subir a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.subir a img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.subir a p {
+  color: #003823;
+  font-size: 20px;
+  font-family: "Asap Condensed Medium";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .secciones-footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  margin: 0 7% 20px;
   gap: 10px;
 }
 
@@ -132,6 +161,7 @@ footer p {
   font-weight: 500;
   line-height: normal;
   padding: 5px 7%;
+  box-shadow: 0px 0px 5px 0 #003823;
 }
 
 .bg-color-navbar {
@@ -140,13 +170,45 @@ footer p {
 
 .navbar-toggler {
   border: none;
+  color: #003823;
 }
 .navbar-toggler:focus {
   box-shadow: none;
 }
 
-.navbar-toggler-icon {
+.offcanvas-header {
   color: #003823;
+}
+
+.offcanvas-body form {
+  padding-left: 100px;
+}
+.offcanvas-body form input {
+  width: 300px;
+  border: 1px solid #003823;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+.offcanvas-body form button {
+  background: #fefde7;
+  color: #003823;
+  border: 1px solid #003823;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+.offcanvas-body form button:hover {
+  background: #003823;
+  color: #fefde7;
+}
+.offcanvas-body ul li a {
+  color: #003823;
+}
+.offcanvas-body ul li a:hover {
+  color: #f2c6c2;
+}
+.offcanvas-body .nav-link-active {
+  color: #f2c6c2;
+  text-decoration: none;
 }
 
 /* títulos*/
@@ -246,7 +308,7 @@ p {
   border-top: 3px solid #003823;
   border-bottom: 3px solid #003823;
   text-align: center;
-  padding: 20px 20px 20px;
+  padding: 10px 20px 10px;
   position: absolute;
   opacity: 0;
   animation: carrusel-testimonio 15s infinite linear;
@@ -275,6 +337,23 @@ p {
     opacity: 0;
   }
 }
+.usuario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0 0 10px;
+}
+.usuario img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.usuario h3 {
+  margin-bottom: 0;
+}
+
 .sobremi {
   height: 550px;
   display: flex;
@@ -304,40 +383,77 @@ p {
   padding: 20px 7%;
 }
 
-.areas-tratamiento {
+.seccion-tratamiento {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px 0;
+  padding: 20px 7%;
 }
-.areas-tratamiento h2 {
+.seccion-tratamiento h2 {
   width: 100%;
   text-align: center;
 }
-.areas-tratamiento article {
-  width: 400px;
+.seccion-tratamiento article {
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: center;
 }
-.areas-tratamiento ul {
+
+.tratamiento {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 10px;
+  padding: 20px 0;
+}
+.tratamiento img {
+  width: 30px;
+  object-fit: cover;
+}
+.tratamiento p {
   font-size: 20px;
   font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-.areas-tratamiento ul li {
-  text-decoration: none;
-  color: #003823;
-  display: block;
-  padding: 5px 0;
+  margin-bottom: 0;
 }
 
 .titulo-tienda {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 20px;
+}
+.titulo-tienda img {
+  width: 120px;
+  height: 45px;
+  object-fit: cover;
+  transition: 0.5s;
+  animation-name: sandia;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+@keyframes sandia {
+  0% {
+    transform: none;
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.titulo-tienda h1 {
+  margin-bottom: 0;
 }
 
 .recetarios {
@@ -516,12 +632,14 @@ p {
   --bs-accordion-body-padding-x: 7%;
 }
 .accordion h2 {
-  color: #003823;
   font-size: 20px;
   font-family: "Asap Condensed Medium";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.accordion h2 button {
+  color: #003823;
 }
 
 .accordion-body {
@@ -598,6 +716,13 @@ p {
   gap: 10px;
 }
 
+/* navbar */
+@media (max-width: 768px) {
+  .offcanvas-body form {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+}
 /* index */
 @media (max-width: 480px) {
   .img-bienvenida {

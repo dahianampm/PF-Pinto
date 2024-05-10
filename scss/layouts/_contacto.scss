@@ -16,8 +16,11 @@
   --bs-accordion-body-padding-x: 7%;
 
   h2 {
-    color: $color-principal;
     @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
+
+    & button {
+      color: $color-principal;
+    }
   }
 }
 
@@ -31,7 +34,7 @@
   background: $color-bg;
   padding: 20px 7%;
   margin: 20px 0 30px;
-  @include flex (column, none, center);
+  @include flex(column, none, center);
 }
 
 /* FORMULARIO DE CONTACTO */

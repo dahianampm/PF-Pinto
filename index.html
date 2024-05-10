@@ -22,10 +22,7 @@
       property="og:description"
       content="Como nutricionista, estoy aquí para brindarte orientación y asesoramiento personalizado sobre tu alimentación y bienestar. Juntos podemos trabajar para alcanzar tus objetivos de salud."
     />
-    <meta
-      property="og:image"
-      content="logo/variante-logo-02.png"
-    />
+    <meta property="og:image" content="logo/variante-logo-02.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -38,14 +35,14 @@
       property="twitter:description"
       content="Como nutricionista, estoy aquí para brindarte orientación y asesoramiento personalizado sobre tu alimentación y bienestar. Juntos podemos trabajar para alcanzar tus objetivos de salud."
     />
-    <meta
-      property="twitter:image"
-      content="logo/variante-logo-02.png"
-    />
+    <meta property="twitter:image" content="logo/variante-logo-02.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
 
-    <meta name="keywords" content="nutricionista, Dahiana Pinto, salud, bienestar, alimentacion" />
+    <meta
+      name="keywords"
+      content="nutricionista, Dahiana Pinto, salud, bienestar, alimentacion"
+    />
 
     <!--     link a bootstrap       -->
     <link
@@ -93,6 +90,17 @@
               ></button>
             </div>
             <div class="offcanvas-body">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Busca lo que necesites aquí"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                   <a
@@ -156,7 +164,13 @@
         <h2>Testimonio de pacientes</h2>
         <div class="carrusel-testimonio">
           <article class="card-testimonio">
-            <h3>David Cristopher</h3>
+            <div class="usuario">
+              <img
+                src="imagenes/usuario-1.png"
+                alt="un usuario llamado David Cristopher"
+              />
+              <h3>David Cristopher</h3>
+            </div>
             <p>
               Desde mi primera consulta con Dahiana, supe que estaba en buenas
               manos. Su enfoque personalizado y su atención a los detalles
@@ -164,7 +178,13 @@
             </p>
           </article>
           <article class="card-testimonio">
-            <h3>Isabella</h3>
+            <div class="usuario">
+              <img
+                src="imagenes/usuario-2.png"
+                alt="un usuario llamado Isabella"
+              />
+              <h3>Isabella</h3>
+            </div>
             <p>
               Con su guía, no solo he perdido peso, sino que también he ganado
               energía y una nueva perspectiva sobre la alimentación saludable.
@@ -172,11 +192,17 @@
             </p>
           </article>
           <article class="card-testimonio">
-            <h3>Emiliana</h3>
+            <div class="usuario">
+              <img
+                src="imagenes/usuario-3.png"
+                alt="un usuario llamado David Cristopher"
+              />
+              <h3>Emiliana</h3>
+            </div>
             <p>
               Gracias a su apoyo constante y conocimiento experto, he logrado un
-              cambio significativo en mi salud y bienestar. ¡No puedo agradecer lo
-              suficiente por esta increíble mejora!
+              cambio significativo en mi salud y bienestar. ¡No puedo agradecer
+              lo suficiente por esta increíble mejora!
             </p>
           </article>
         </div>
@@ -184,6 +210,17 @@
     </main>
     <!------------------------------------footer-------------------------------------->
     <footer>
+      <!-- barra subir  -->
+      <div class="subir">
+        <a href="#">
+          <img
+            class="flecha-subir"
+            src="imagenes/top-arrow.png"
+            alt="flecha para subir"
+          />
+          <p>Subir</p>
+        </a>
+      </div>
       <!-- menú navegador en footer  -->
       <section class="secciones-footer">
         <article class="menu-footer">

@@ -8,6 +8,7 @@
   color: $color-principal;
   @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
   padding: 5px 7%;
+  box-shadow: 0px 0px 5px 0 $color-principal;
 }
 
 .bg-color-navbar {
@@ -16,12 +17,52 @@
 
 .navbar-toggler {
   border: none;
+  color: $color-principal;
 
   &:focus {
     box-shadow: none;
   }
 }
 
-.navbar-toggler-icon {
+.offcanvas-header {
   color: $color-principal;
+}
+
+.offcanvas-body {
+  form {
+    padding-left: 100px;
+
+    & input {
+      width: 300px;
+      border: 1px solid $color-principal;
+      border-radius: 20px;
+      padding-left: 20px;
+    }
+
+    & button {
+      background: $color-secundario;
+      color: $color-principal;
+      border: 1px solid $color-principal;
+      border-radius: 20px;
+      padding: 5px 20px;
+
+      &:hover{
+        background: $color-principal;
+        color: $color-secundario;
+      }
+    }
+  }
+  
+  ul li a {
+    color: $color-principal;
+
+    &:hover {
+      color: $color-terciario;
+    }
+  }
+
+  .nav-link-active {
+    color: $color-terciario;
+    text-decoration: none;
+  }
 }

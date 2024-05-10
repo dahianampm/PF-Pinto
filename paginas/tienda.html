@@ -22,10 +22,7 @@
       property="og:description"
       content="Explora mi tienda de recetarios nutricionales y descubre opciones saludables para mejorar tu alimentación. Encuentra recetas equilibradas, consejos y más. ¡Cuida tu salud con estas deliciosas propuestas!"
     />
-    <meta
-      property="og:image"
-      content="../logo/variante-logo-metatag.png"
-    />
+    <meta property="og:image" content="../logo/variante-logo-metatag.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -48,7 +45,10 @@
 
     <!-- Meta Tags Generated with https://metatags.io -->
 
-    <meta name="keywords" content="nutricionista, Dahiana Pinto, tienda, recetas, saludable" />
+    <meta
+      name="keywords"
+      content="nutricionista, Dahiana Pinto, tienda, recetas, saludable"
+    />
 
     <!--     link a bootstrap       -->
     <link
@@ -96,6 +96,17 @@
               ></button>
             </div>
             <div class="offcanvas-body">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Busca lo que necesites aquí"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="../index.html"
@@ -126,7 +137,14 @@
     <!------------------------------------main-------------------------------------->
 
     <main>
-      <h1 class="titulo-tienda">Recetarios</h1>
+      <div class="titulo-tienda">
+        <h1>Recetarios</h1>
+        <img
+          class="sandia-recetario"
+          src="../imagenes/sandia-recetario.png"
+          alt="sandía que se mueve de un lado a otro"
+        />
+      </div>
 
       <section class="recetarios">
         <div class="card-recetario">
@@ -173,6 +191,17 @@
 
     <!------------------------------------footer-------------------------------------->
     <footer>
+      <!-- barra subir  -->
+      <div class="subir">
+        <a href="#">
+          <img
+            class="flecha-subir"
+            src="../imagenes/top-arrow.png"
+            alt="flecha para subir"
+          />
+          <p>Subir</p>
+        </a>
+      </div>
       <!-- menú navegador en footer  -->
       <section class="secciones-footer">
         <article class="menu-footer">

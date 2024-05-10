@@ -52,7 +52,7 @@
   border-top: 3px solid $color-principal;
   border-bottom: 3px solid $color-principal;
   text-align: center;
-  padding: 20px 20px 20px;
+  padding: 10px 20px 10px;
   position: absolute;
   opacity: 0;
   animation: carrusel-testimonio 15s infinite linear;
@@ -81,5 +81,19 @@
 
   40% {
     opacity: 0;
+  }
+}
+
+.usuario {
+  @include flex (row, center, center);
+  gap: 30px;
+  padding: 0 0 10px;
+
+  img {
+    @include img(50px, 50px, cover);
+  }
+
+  h3{
+    margin-bottom: 0;
   }
 }
