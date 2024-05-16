@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam:wght@300;400;700&display=swap");
 * {
   margin: 0;
@@ -181,13 +180,17 @@ footer p {
 }
 
 .offcanvas-body form {
-  padding-left: 100px;
+  padding-left: 60px;
 }
 .offcanvas-body form input {
-  width: 300px;
+  width: 400px;
   border: 1px solid #003823;
   border-radius: 20px;
   padding-left: 20px;
+}
+.offcanvas-body form input.focus-ring {
+  box-shadow: none;
+  border: 1px solid #003823;
 }
 .offcanvas-body form button {
   background: #fefde7;
@@ -730,10 +733,12 @@ p {
   }
   .logotipo-bienvenida {
     width: 265px;
+    align-self: center;
   }
   .contenedor-bienvenida {
     width: 265px;
     align-items: center;
+    align-self: center;
   }
   .contenedor-bienvenida p {
     text-align: center;

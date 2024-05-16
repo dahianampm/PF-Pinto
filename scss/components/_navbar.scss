@@ -30,29 +30,34 @@
 
 .offcanvas-body {
   form {
-    padding-left: 100px;
+    padding-left: 60px;
 
-    & input {
-      width: 300px;
+    input {
+      width: 400px;
       border: 1px solid $color-principal;
       border-radius: 20px;
       padding-left: 20px;
+
+      &.focus-ring {
+        box-shadow: none;
+        border: 1px solid $color-principal;
+      }
     }
 
-    & button {
+    button {
       background: $color-secundario;
       color: $color-principal;
       border: 1px solid $color-principal;
       border-radius: 20px;
       padding: 5px 20px;
 
-      &:hover{
+      &:hover {
         background: $color-principal;
         color: $color-secundario;
       }
     }
   }
-  
+
   ul li a {
     color: $color-principal;
 
