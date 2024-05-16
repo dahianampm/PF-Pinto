@@ -1,3 +1,23 @@
+/* fuentes para mobile */
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    color: $color-principal;
+    @include texto(24px, "Kalam", normal, 700, normal);
+  }
+
+  h3,
+  h4 {
+    color: $color-principal;
+    @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
+  }
+
+  p {
+    color: $color-principal;
+    @include texto(16px, "Asap Condensed", normal, 400, normal);
+  }
+}
+
 /* navbar */
 @media (max-width: 768px) {
   .offcanvas-body {

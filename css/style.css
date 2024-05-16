@@ -734,6 +734,35 @@ p {
   gap: 10px;
 }
 
+/* fuentes para mobile */
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    color: #003823;
+    font-size: 24px;
+    font-family: "Kalam";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  h3,
+  h4 {
+    color: #003823;
+    font-size: 20px;
+    font-family: "Asap Condensed Medium";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  p {
+    color: #003823;
+    font-size: 16px;
+    font-family: "Asap Condensed";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 /* navbar */
 @media (max-width: 768px) {
   .offcanvas-body form {
