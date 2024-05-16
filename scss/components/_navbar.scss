@@ -58,17 +58,11 @@
       }
     }
   }
-
   ul li a {
     color: $color-principal;
 
     &:hover {
       color: $color-terciario;
     }
-  }
-
-  .nav-link-active {
-    color: $color-terciario;
-    text-decoration: none;
   }
 }

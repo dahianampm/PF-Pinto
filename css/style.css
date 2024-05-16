@@ -215,10 +215,6 @@ footer p {
 .offcanvas-body ul li a:hover {
   color: #f2c6c2;
 }
-.offcanvas-body .nav-link-active {
-  color: #f2c6c2;
-  text-decoration: none;
-}
 
 /* títulos*/
 h1,
