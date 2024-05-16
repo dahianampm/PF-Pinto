@@ -54,6 +54,10 @@
   box-shadow: 0px 0px 5px 0 $color-principal;
   z-index: 1;
 
+  h2 {
+    @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
+  }
+
   &:hover {
     background-color: $color-terciario;
   }

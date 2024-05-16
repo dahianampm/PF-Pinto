@@ -1,7 +1,7 @@
 .seccion-consultaonline {
   height: 350px;
   width: 100%;
-  @include flex (column, center, center);
+  @include flex(column, center, center);
   margin: 20px 0;
   position: relative;
 }
@@ -14,7 +14,7 @@
 
 .contenedor-consultaonline {
   background-color: #ffffffe6;
-  @include flex (column, none, center);
+  @include flex(column, none, center);
   padding: 10px;
   border-radius: 20px;
   z-index: 1;
@@ -27,6 +27,10 @@
   padding: 20px 7%;
   display: flex;
   flex-direction: column;
+
+  h2 {
+    @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
+  }
 
   ul {
     @include texto(16px, "Asap Condensed", normal, 400, normal);
@@ -76,7 +80,7 @@
 }
 
 .contenedor-tarifa {
-  @include flex (column, space-between, none);
+  @include flex(column, space-between, none);
   width: 300px;
   height: 200px;
   border-radius: 20px;
