@@ -1,6 +1,6 @@
 .boton {
   color: $color-principal;
-  @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
+  @include texto(20px, "Asap Condensed", normal, 500, normal);
   text-align: center;
   height: 40px;
   border-radius: 20px;

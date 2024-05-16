@@ -16,7 +16,7 @@
 .boton {
   color: #003823;
   font-size: 20px;
-  font-family: "Asap Condensed Medium";
+  font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -66,7 +66,7 @@ footer h3 {
 .subir a p {
   color: #003823;
   font-size: 20px;
-  font-family: "Asap Condensed Medium";
+  font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -156,7 +156,7 @@ footer p {
   padding: 0;
   color: #003823;
   font-size: 20px;
-  font-family: "Asap Condensed Medium";
+  font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -195,6 +195,11 @@ footer p {
 }
 .offcanvas-body form button {
   background: #fefde7;
+  font-size: 18px;
+  font-family: "Asap Condensed";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   color: #003823;
   border: 1px solid #003823;
   border-radius: 20px;
@@ -231,9 +236,9 @@ h3,
 h4 {
   color: #003823;
   font-size: 20px;
-  font-family: "Asap Condensed Medium";
+  font-family: "Asap Condensed";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -273,7 +278,7 @@ p {
 }
 .contenedor-bienvenida p {
   font-size: 20px;
-  font-family: "Asap Condensed Medium";
+  font-family: "Asap Condensed";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -481,9 +486,9 @@ p {
 }
 .card-recetario h2 {
   font-size: 20px;
-  font-family: "Asap Condensed Medium";
+  font-family: "Asap Condensed";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 .card-recetario:hover {
@@ -552,13 +557,6 @@ p {
   display: flex;
   flex-direction: column;
 }
-.consulta-comofunciona h2 {
-  font-size: 20px;
-  font-family: "Asap Condensed Medium";
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
 .consulta-comofunciona ul {
   font-size: 16px;
   font-family: "Asap Condensed";
@@ -567,7 +565,6 @@ p {
   line-height: normal;
   list-style-type: decimal;
   text-align: left;
-  padding: 20px;
 }
 .consulta-comofunciona ul li {
   text-decoration: none;
@@ -649,15 +646,13 @@ p {
   --bs-accordion-btn-padding-y: 10px;
   --bs-accordion-body-padding-x: 7%;
 }
-.accordion h2 {
-  font-size: 20px;
-  font-family: "Asap Condensed Medium";
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
 .accordion h2 button {
   color: #003823;
+  font-size: 18px;
+  font-family: "Asap Condensed";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .accordion-body {
@@ -700,9 +695,9 @@ p {
   height: 40px;
   color: #003823;
   font-size: 16px;
-  font-family: "Asap Condensed Medium";
+  font-family: "Asap Condensed";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   padding: 20px 0;
   align-content: center;
@@ -734,35 +729,6 @@ p {
   gap: 10px;
 }
 
-/* fuentes para mobile */
-@media (max-width: 480px) {
-  h1,
-  h2 {
-    color: #003823;
-    font-size: 24px;
-    font-family: "Kalam";
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  h3,
-  h4 {
-    color: #003823;
-    font-size: 20px;
-    font-family: "Asap Condensed Medium";
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  p {
-    color: #003823;
-    font-size: 16px;
-    font-family: "Asap Condensed";
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-}
 /* navbar */
 @media (max-width: 768px) {
   .offcanvas-body form {
@@ -826,6 +792,7 @@ p {
   }
   footer p {
     text-align: left;
+    margin: 0 7%;
   }
 }
 

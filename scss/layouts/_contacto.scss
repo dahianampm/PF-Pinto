@@ -16,10 +16,9 @@
   --bs-accordion-body-padding-x: 7%;
 
   h2 {
-    @include texto(20px, "Asap Condensed Medium", normal, 500, normal);
-
-    & button {
+    button {
       color: $color-principal;
+      @include texto(18px, "Asap Condensed", normal, 600, normal);
     }
   }
 }
@@ -57,7 +56,7 @@
     width: 70px;
     height: 40px;
     color: $color-principal;
-    @include texto(16px, "Asap Condensed Medium", normal, 500, normal);
+    @include texto(16px, "Asap Condensed", normal, 600, normal);
     padding: 20px 0;
     align-content: center;
     text-align: left;
